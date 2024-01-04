@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagamani-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7659e5f3cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Certificates</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1><span> Hi,I am Nagamani from <br>Bhimavaram,Andhra Pradesh </span></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="neelu1.jpeg" width="400" height="400">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I hold a BTech degree in Computer Science and Engineering from Rajiv Gandhi University of Knowledge and Technologies, Nuzvid, with a consistent 75% academic record. Currently, I am training as a junior Java full-stack developer through Edujob in association with Generation. My skill set encompasses HTML, CSS, JavaScript, Java, SQL, and Spring. I'm eager to explore development opportunities.
+                Thank you!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('project')">Projects</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>HTML,CSS,JavaScript,Java </li>
+                        <li><span>Software Development Tools</span><br>Git,Eclipse,VS Code and LINUX</li>
+                        <li><span>Database Managment System</span><br>MySql</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>Secure File Storage On Cloud Using Hybrid Cryptography</span><br>The proposed model is liable to meet the required security needs of data center of cloud. AES, DES and RSA are used for the encryption of file slices takes minimum time and has maximum throughput for encryption and decryption from other symmetric algorithms.
+                        </li>
+                        <li><span>Library Managment System</span><br>Simple java project where we can add update show books</li>
+                        <li><span>Portfolio</span><br>Simple Webpage using css html and javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>B.TECH IN COMPUTER SCIENCE AND ENGINEERING</span><br>Rajiv Gandhi University Of Knowledge And Technologies <br>2018 - 2022 <br>Nuzvidu, India</li>
+                        <li><span>12th</span><br>Rajiv Gandhi University Of Knowledge And Technologies<br>2015 - 2018 <br> Nuzvidu, India</li>
+                        <li><span>10th</span><br>Y.CH&A.Z.P.H SCHOOL<br>2014 - 2015 <br>India</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Java RealTime Project</h2>
+                <a href="https://github.com/nagamanigaatala/SIMPLE_REALTIME_PROJECTS"> Java RealTime Project</a>
+            </div>
+            <div>
+                <h2>My Personal Portfolio</h2>
+                <a href="https://nagamanigaatala.github.io/My_personal_portfolio/">Portfolio</a>
+            </div>
+            <div>
+                <h2>HTML_CSS_JS Projects</h2>
+                <a href="https://github.com/nagamanigaatala/HTML_CSS_JS">SAMPLE-WEB-PAGES-USING-HTML_CSS_JS</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="java.jpeg">
+            </div>
+            <div class="work">
+                <img src="html.jpeg">
+            </div>
+            <div class="work">
+                <img src="oopsjava.jpeg">
+            </div>
+            <div class="work">
+                <img src="js.png">
+            </div>
+            <div class="work">
+                <img src="sql.jpeg">
+            </div>
+            <div class="work">
+                <img src="git.png">
+            </div>
+        </div>
+        
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> nagamanigaatala333@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8501080836</p>
+                <div class="social-icon">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
